@@ -10,7 +10,7 @@ self.addEventListener('fetch', (event) => {
     console.log(event.request.url);
     if (event.request.url.includes('.jpg')) {
 
-        let newResp = fetch('PWA-FAC-U1-P1/images/gato.jpg');
+        let newResp = fetch('/PWA-FAC-U1-P1/images/gato.jpg');
         console.log("Es una imagen");
         event.respondWith(newResp);
     }
